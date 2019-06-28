@@ -83,7 +83,7 @@ selection.enter().append("circle")
 
 selection.enter().append("text")
 .attr("x", (d) => xScale(d.poverty))
-.attr("y", (d) => xScale(d.healthcare))
+.attr("y", (d) => yScale(d.healthcare))
 .attr("text-anchor", "middle")
 // .attr("transform", `translate(0, ${chartHeight})`)
 // .attr("transform", `translate(${margin.left}, ${margin.top})`)
